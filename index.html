@@ -870,7 +870,7 @@
       var a = document.createElement('a');
       a.style = 'display:none'
       document.body.appendChild(a);
-      const url = window.URL.createObjectURL(cvs.toDataURL());
+      const url = window.URL.createObjectURL(new Blob([cvs.toDataURL()], {type: 'image/png'}));
       a.href = url;
       a.download = 'Polaris80选色.png'
       a.click();
