@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="css/fonts.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <div class="navbar-fixed">
+    <nav class="light-blue lighten-1" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">Polaris80选色参考</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a href="#" onclick="confirm()">保存选色图</a></li>
+        </ul>
+
+      </div>
+
+    </nav>
+
+    
+    
+  </div>
+
+
+    <div class="row" >
+        <div class="col s1"></div>
+        <div class="col s10">
+          <div class="row">
+            <div class="col s2">
+              <div class="row">
+                <div class="col s12">
+                  <div class="row">
+                    <div class="col s4">
+                      <p>
+                        <label for="hasMy">
+                          <input type="checkbox" id='hasMy' checked="checked" />
+                          <span>门牙</span>
+                        </label>
+                      </p>
+                    </div>
+                    <div class="input-field col s8">
+                        <select id="topGasColor">
+                          <option value="1">阳极深紫</option>
+                          <option value="2">阳极红</option>
+                          <option value="3">阳极灰</option>
+                          <option value="4">阳极黑</option>
+                          <option value="5">电泳冷白</option>
+                          <option value="6">电泳奶白</option>
+                          <option value="7">电泳淡白紫</option>
+                          <option value="8">电泳蜜桃粉</option>
+                          <option value="9">电泳桃绒金</option>
+                          <option value="10">电泳冰川蓝</option>
+                          <option value="11">电泳丁香紫</option>
+                          <option value="12">电泳蒂芙尼蓝</option>
+                        </select>
+                        <label>上盖颜色</label>
+                    
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="input-field col s12">
+                  <select id="topHL">
+                    <option value="0" >无</option>
+                    <option value="1" id="topHL1">金</option>
+                    <option value="2" id="topHL2" disabled>银</option>
+                    <option value="3" id="topHL3" disabled>蓝</option>
+                    <option value="4" id="topHL4" disabled>红</option>
+                    <option value="5" id="topHL5" disabled>紫</option>
+                  </select>
+                  <label>高光颜色</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pzbk">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配重边框色</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pzbkHL">
+                    <option value="1">金</option>
+                    <option value="2">银</option>
+                    <option value="3">蓝</option>
+                    <option value="4">红</option>
+                    <option value="5">紫</option>
+                  </select>
+                  <label>配重边框高光色</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pz">
+                    <option value="1">金</option>
+                    <option value="2">银</option>
+                    <option value="3">黑</option>
+                    <option value="4">蓝</option>
+                    <option value="5">炫彩</option>
+                  </select>
+                  <label>配重颜色</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pzxx">
+                    <option value="1">金</option>
+                    <option value="2">银</option>
+                    <option value="3">黑</option>
+                    <option value="4">蓝</option>
+                    <option value="5">炫彩</option>
+                  </select>
+                  <label>配重星星</label>
+                </div>
+                <div class="col s12">
+                  <p>
+                    <label for="top1">
+                      <input name="group1" type="radio" checked id="top1" value="top1"/>
+                      <span>顶部1</span>
+                    </label>
+                  </p>
+                  <p>
+                    <label for="top2">
+                      <input name="group1" type="radio" id="top2" value="top2"/>
+                      <span>顶部2</span>
+                    </label>
+                  </p>
+                </div>
+                <div class="input-field col s12 top1series">
+                  <select id="top11">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件1</label>
+                </div>
+                <div class="input-field col s12 top1series">
+                  <select id="top12">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件2</label>
+                </div>
+                <div class="input-field col s12 top2series">
+                  <select id="top21">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件1 X</label>
+                </div>
+                <div class="input-field col s12 top2series">
+                  <select id="top22">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件2 点横</label>
+                </div>
+                <div class="input-field col s12 top2series">
+                  <select id="top23">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件3 小竖横三角</label>
+                </div>
+                <div class="input-field col s12 top2series">
+                  <select id="top24">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件4 星星</label>
+                </div>
+                <div class="input-field col s12 top2series">
+                  <select id="top25">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件5 星星框</label>
+                </div>
+                <div class="input-field col s12 top2series">
+                  <select id="top26">
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>配件6 横条底色</label>
+                </div>
+                <div class="input-field col s12 top2series">
+                  <select id="top27"> 
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                  </select>
+                  <label>整体底色</label>
+                </div>
+              </div>
+            </div>
+            <div class="col s8">
+              <div class="section">
+                <div class="row">
+                  <div class="col s12 " class="background">
+                    <div id='editor'></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col s2">
+              <div class="row">
+                <div class="input-field col s12">
+                  <select id="pjfk1">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>方块灯件星星</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pjfk2">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>方块灯件爱心</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pjfk3">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>方块灯件叹号</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pjmp1">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>铭牌1</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pjmp2">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>铭牌2</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pjmp31">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>铭牌3 配件1 小X</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pjmp32">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>铭牌3 配件2 方块底色</label>
+                </div>
+                <div class="input-field col s12">
+                  <select id="pjmp33">
+                    <option value="1">阳极深紫</option>
+                    <option value="2">阳极红</option>
+                    <option value="3">阳极灰</option>
+                    <option value="4">阳极黑</option>
+                    <option value="5">电泳冷白</option>
+                    <option value="6">电泳奶白</option>
+                    <option value="7">电泳淡白紫</option>
+                    <option value="8">电泳蜜桃粉</option>
+                    <option value="9">电泳桃绒金</option>
+                    <option value="10">电泳冰川蓝</option>
+                    <option value="11">电泳丁香紫</option>
+                    <option value="12">电泳蒂芙尼蓝</option>
+                  </select>
+                  <label>铭牌3 主体颜色</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s1">
+
+        </div>
+
+    </div>
+  
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col  s12">
+          <h5 class="white-text">免责声明</h5>
+          <p class="grey-text text-lighten-4">图片资源来源于客户群</p>
+          <p class="grey-text text-lighten-4">网页是写着玩的，因显示设备、浏览器设置等原因导致的选色图与实物不一致本人概不负责</p>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  
+  <script src="js/hammer.min.js"></script>
+  <script src="js/ImageEditor.js"></script>
+  <script src="js/init.js"></script>
+  <script type="text/javascript">
+    var editor = null;
+    $(document).ready(function(){
+      $('select').formSelect();
+      editor = $('#editor').ImageEditor({
+          imageUrls: [
+            {url: 'images/back.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/NtopGas1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pb5.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pbHL1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pz1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/px1.png', closeButtonRequire: false, clickToSelect: false},
+            //top1
+            {url: 'images/tt115.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/tt125.png', closeButtonRequire: false, clickToSelect: false},
+            //top2
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            //pj
+            {url: 'images/pjxx1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjax1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjth1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp11.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp21.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp311.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp321.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp331.png', closeButtonRequire: false, clickToSelect: false},
+          ],
+          removeIcon: null,
+          width: 1200,
+          height: 1100,
+          onInitCompleted: function() {
+            
+          }
+        });
+    });
+    //上盖
+    $('input#hasMy').on('change', function (){
+      //处理门牙
+      var iN = $('#hasMy:checked').val();
+      var N = "";
+      if(iN){
+        N = "N"
+      } else {
+        N = ""
+      }
+      var topGasColor = $('#topGasColor').val();
+      editor.setImage({
+        url: 'images/' + N + "topGas" + topGasColor + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 2, false)
+      var topHL = $('#topHL').val();
+      editor.setImage({
+        url: 'images/' + N + "topHL" + topHL + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 3, false)
+
+    });
+    $('#topGasColor').on('change', solvTopGas);
+    
+    function solvTopGas(){
+      //处理门牙
+      var iN = $('#hasMy:checked').val();
+      var N = "";
+      if(iN){
+        N = "N"
+      } else {
+        N = ""
+      }
+
+      //处理高光选项
+      //TODO
+      var topGasColor = $('#topGasColor').val();
+      editor.setImage({
+        url: 'images/' + N + "topGas" + topGasColor + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 2, false)
+      if(topGasColor == 1 || topGasColor == 2 || topGasColor == 3){
+        var topHL = $('#topHL').val();
+        if(!(topHL == '1') && !(topHL == '0')) {
+          $('select#topHL').val('0');
+        }
+        $('#topHL2').attr("disabled", true);
+        $('#topHL3').attr("disabled", true);
+        $('#topHL4').attr("disabled", true);
+        $('#topHL5').attr("disabled", true);
+        $('select#topHL').formSelect();
+      } else if(topGasColor == 4) {
+        var topHL = $('#topHL').val();
+        if(!(topHL == '1') && !(topHL == '0') && !(topHL == '2')) {
+          $('select#topHL').val('0');
+        }
+        $('#topHL2').attr("disabled", false);
+        $('#topHL3').attr("disabled", true);
+        $('#topHL4').attr("disabled", true);
+        $('#topHL5').attr("disabled", true);
+        $('select#topHL').formSelect();
+      } else {
+        $('#topHL2').attr("disabled", false);
+        $('#topHL3').attr("disabled", false);
+        $('#topHL4').attr("disabled", false);
+        $('#topHL5').attr("disabled", false);
+        $('select#topHL').formSelect();
+      }
+      var topHL = $('#topHL').val();
+      editor.setImage({
+        url: 'images/' + N + "topHL" + topHL + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 3, false)
+
+    };
+
+    $('select#topHL').on('change', function(){
+      //处理门牙
+      var iN = $('#hasMy:checked').val();
+      var N = "";
+      if(iN){
+        N = "N"
+      } else {
+        N = ""
+      }
+      var topHL = $('#topHL').val();
+      editor.setImage({
+        url: 'images/' + N + "topHL" + topHL + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 3, false)
+      
+      
+    });
+    //配重
+    $('select#pzbk').on('change', function(){
+      var pzbk = $('#pzbk').val();
+      editor.setImage({
+        url: 'images/pb' + pzbk + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 3, false)
+    });
+    $('select#pzbkHL').on('change', function(){
+      var pzbkHL = $('#pzbkHL').val();
+      editor.setImage({
+        url: 'images/pbHL' + pzbkHL + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 4, false)
+    })
+    $('select#pz').on('change', function(){
+      var pz = $('#pz').val();
+      editor.setImage({
+        url: 'images/pz' + pz + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 5, false)
+    });
+    $('select#pzxx').on('change', function(){
+      var px = $('#pzxx').val();
+      editor.setImage({
+        url: 'images/px' + px + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 6, false)
+    });
+    //顶部1
+    $('select#top11').on('change', function(){
+      var top11 = $('#top11').val();
+      editor.setImage({
+        url: 'images/tt11' + top11 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 7, false)
+    });
+    $('select#top12').on('change', function(){
+      var top12 = $('#top12').val();
+      editor.setImage({
+        url: 'images/tt12' + top12 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 8, false)
+    });
+    //顶部2
+    $('select#top21').on('change', function(){
+      var top21 = $('#top21').val();
+      editor.setImage({
+        url: 'images/tt21' + top21 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 9, false);
+    });
+    $('select#top22').on('change', function(){
+      var top22 = $('#top22').val();
+      editor.setImage({
+        url: 'images/tt22' + top22 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 10, false);
+    });
+    $('select#top23').on('change', function(){
+      var top23 = $('#top23').val();
+      editor.setImage({
+        url: 'images/tt23' + top23 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 11, false);
+    });
+    $('select#top24').on('change', function(){
+      var top24 = $('#top24').val();
+      editor.setImage({
+        url: 'images/tt24' + top24 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 12, false);
+    });
+    $('select#top25').on('change', function(){
+      var top25 = $('#top25').val();
+      editor.setImage({
+        url: 'images/tt25' + top25 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 13, false);
+    });
+    $('select#top26').on('change', function(){
+      var top26 = $('#top26').val();
+      editor.setImage({
+        url: 'images/tt26' + top26 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 14, false);
+    });
+    $('select#top27').on('change', function(){
+      var top27 = $('#top27').val();
+      editor.setImage({
+        url: 'images/tt2b' + top27 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 15, false);
+    });
+    //方块灯件
+    $('select#pjfk1').on('change', function(){
+      var pjfk1 = $('#pjfk1').val();
+      editor.setImage({
+        url: 'images/pjxx' + pjfk1 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 16, false);
+    });
+    $('select#pjfk2').on('change', function(){
+      var pjfk2 = $('#pjfk2').val();
+      editor.setImage({
+        url: 'images/pjax' + pjfk2 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 17, false);
+    });
+    $('select#pjfk3').on('change', function(){
+      var pjfk3 = $('#pjfk3').val();
+      editor.setImage({
+        url: 'images/pjth' + pjfk3 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 18, false);
+    });
+    //铭牌
+    $('select#pjmp1').on('change', function(){
+      var pjmp1 = $('#pjmp1').val();
+      editor.setImage({
+        url: 'images/pjmp1' + pjmp1 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 19, false);
+    });
+    $('select#pjmp2').on('change', function(){
+      var pjmp2 = $('#pjmp2').val();
+      editor.setImage({
+        url: 'images/pjmp2' + pjmp2 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 20, false);
+
+    });
+    $('select#pjmp31').on('change', function(){
+      var pjmp31 = $('#pjmp31').val();
+      editor.setImage({
+        url: 'images/pjmp31' + pjmp31 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 21, false);
+    });
+    $('select#pjmp32').on('change', function(){
+      var pjmp32 = $('#pjmp32').val();
+      editor.setImage({
+        url: 'images/pjmp32' + pjmp32 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 22, false);
+    });
+    $('select#pjmp33').on('change', function(){
+      var pjmp33 = $('#pjmp33').val();
+      editor.setImage({
+        url: 'images/pjmp33' + pjmp33 + ".png",
+        closeButtonRequire: false, clickToSelect: false,
+      }, 23, false);
+    });
+
+    $('input[name=group1]').on('change', function(){
+      var x = $('input[name=group1]:checked').val()
+      if(x == "top1") {
+        $('.top1series').show();
+        $('.top2series').hide();
+        //调整顶部1
+        $('select#top11').val(1);
+        $('select#top12').val(1);
+        $('select#top11').formSelect();
+        $('select#top12').formSelect();
+        //设置图片
+        editor.setImage({
+          url: 'images/tt111.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 7, false);
+        editor.setImage({
+          url: 'images/tt121.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 8, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 9, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 10, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 11, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 12, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 13, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 14, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 15, false);
+      } else {
+        $('.top1series').hide()
+        $('.top2series').show()
+        //调整顶部2
+        $('select#top21').val('1');
+        $('select#top22').val('1');
+        $('select#top23').val('1');
+        $('select#top24').val('1');
+        $('select#top25').val('1');
+        $('select#top26').val('1');
+        $('select#top27').val('1');
+        $('select#top21').formSelect();
+        $('select#top22').formSelect();
+        $('select#top23').formSelect();
+        $('select#top24').formSelect();
+        $('select#top25').formSelect();
+        $('select#top26').formSelect();
+        $('select#top27').formSelect();
+        //设置图片
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 7, false);
+        editor.setImage({
+          url: 'images/empty.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 8, false);
+        editor.setImage({
+          url: 'images/tt211.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 9, false);
+        editor.setImage({
+          url: 'images/tt221.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 10, false);
+        editor.setImage({
+          url: 'images/tt231.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 11, false);
+        editor.setImage({
+          url: 'images/tt241.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 12, false);
+        editor.setImage({
+          url: 'images/tt251.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 13, false);
+        editor.setImage({
+          url: 'images/tt261.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 14, false);
+        editor.setImage({
+          url: 'images/tt2b1.png',
+          closeButtonRequire: false, clickToSelect: false,
+        }, 15, false);
+      }
+    });
+    function confirm(){
+      var cvs = editor.mergeImage();
+      var a = document.createElement('a');
+      a.style = 'display:none'
+      document.body.appendChild(a);
+      const url = window.URL.createObjectURL(cvs.toDataURL());
+      a.href = url;
+      a.download = 'Polaris80选色.png'
+      a.click();
+      a.remove();
+      window.URL.revokeObjectURL(url);
+
+    }
+  </script>
+  </body>
+</html>
