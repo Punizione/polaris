@@ -870,13 +870,21 @@
       var a = document.createElement('a');
       a.style = 'display:none'
       document.body.appendChild(a);
-      const url = window.URL.createObjectURL(new Blob([cvs.toDataURL()], {type: 'application/octet-stream'}));
+      const url = window.URL.createObjectURL(dataURLtoBolb(cvs.toDataURL));
       a.href = url;
       a.download = 'Polaris80选色.png'
       a.click();
       a.remove();
       window.URL.revokeObjectURL(url);
 
+    }
+    function dataURLtoBolb(dataurl){
+      var arr = dataurl.split(','), mime = arr[0].match(/:(.*?);/)[1],
+      bstr = atob(arr[1]), n = bstr.length, u8arr = new Uint8Array(n);
+      while(n--) {
+        u8arr[n] = bstr.charCodeAt(n);
+      }
+      return new Blob([u8arr], {type:mime})
     }
   </script>
   </body>
