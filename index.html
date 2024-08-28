@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
   <title>Starter Template - Materialize</title>
 
   <!-- CSS  -->
@@ -477,33 +478,33 @@
       $('select').formSelect();
       editor = $('#editor').ImageEditor({
           imageUrls: [
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/back.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/NtopGas1.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pb5.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pbHL1.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pz1.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/px1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/back.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/NtopGas1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pb5.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pbHL1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pz1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/px1.png', closeButtonRequire: false, clickToSelect: false},
             //top1
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/tt115.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/tt125.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/tt115.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/tt125.png', closeButtonRequire: false, clickToSelect: false},
             //top2
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/empty.png', closeButtonRequire: false, clickToSelect: false},
             //pj
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjxx1.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjax1.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjth1.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp11.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp21.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp311.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp321.png', closeButtonRequire: false, clickToSelect: false},
-            {url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp331.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjxx1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjax1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjth1.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp11.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp21.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp311.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp321.png', closeButtonRequire: false, clickToSelect: false},
+            {url: 'images/pjmp331.png', closeButtonRequire: false, clickToSelect: false},
           ],
           removeIcon: null,
           width: 1200,
@@ -525,12 +526,12 @@
       }
       var topGasColor = $('#topGasColor').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/' + N + "topGas" + topGasColor + ".png",
+        url: 'images/' + N + "topGas" + topGasColor + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 2, false)
       var topHL = $('#topHL').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/' + N + "topHL" + topHL + ".png",
+        url: 'images/' + N + "topHL" + topHL + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 3, false)
 
@@ -551,7 +552,7 @@
       //TODO
       var topGasColor = $('#topGasColor').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/' + N + "topGas" + topGasColor + ".png",
+        url: 'images/' + N + "topGas" + topGasColor + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 2, false)
       if(topGasColor == 1 || topGasColor == 2 || topGasColor == 3){
@@ -583,7 +584,7 @@
       }
       var topHL = $('#topHL').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/' + N + "topHL" + topHL + ".png",
+        url: 'images/' + N + "topHL" + topHL + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 3, false)
 
@@ -600,7 +601,7 @@
       }
       var topHL = $('#topHL').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/' + N + "topHL" + topHL + ".png",
+        url: 'images/' + N + "topHL" + topHL + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 3, false)
       
@@ -610,28 +611,28 @@
     $('select#pzbk').on('change', function(){
       var pzbk = $('#pzbk').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pb' + pzbk + ".png",
+        url: 'images/pb' + pzbk + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 3, false)
     });
     $('select#pzbkHL').on('change', function(){
       var pzbkHL = $('#pzbkHL').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pbHL' + pzbkHL + ".png",
+        url: 'images/pbHL' + pzbkHL + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 4, false)
     })
     $('select#pz').on('change', function(){
       var pz = $('#pz').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pz' + pz + ".png",
+        url: 'images/pz' + pz + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 5, false)
     });
     $('select#pzxx').on('change', function(){
       var px = $('#pzxx').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/px' + px + ".png",
+        url: 'images/px' + px + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 6, false)
     });
@@ -639,14 +640,14 @@
     $('select#top11').on('change', function(){
       var top11 = $('#top11').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt11' + top11 + ".png",
+        url: 'images/tt11' + top11 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 7, false)
     });
     $('select#top12').on('change', function(){
       var top12 = $('#top12').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt12' + top12 + ".png",
+        url: 'images/tt12' + top12 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 8, false)
     });
@@ -654,49 +655,49 @@
     $('select#top21').on('change', function(){
       var top21 = $('#top21').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt21' + top21 + ".png",
+        url: 'images/tt21' + top21 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 9, false);
     });
     $('select#top22').on('change', function(){
       var top22 = $('#top22').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt22' + top22 + ".png",
+        url: 'images/tt22' + top22 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 10, false);
     });
     $('select#top23').on('change', function(){
       var top23 = $('#top23').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt23' + top23 + ".png",
+        url: 'images/tt23' + top23 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 11, false);
     });
     $('select#top24').on('change', function(){
       var top24 = $('#top24').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt24' + top24 + ".png",
+        url: 'images/tt24' + top24 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 12, false);
     });
     $('select#top25').on('change', function(){
       var top25 = $('#top25').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt25' + top25 + ".png",
+        url: 'images/tt25' + top25 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 13, false);
     });
     $('select#top26').on('change', function(){
       var top26 = $('#top26').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt26' + top26 + ".png",
+        url: 'images/tt26' + top26 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 14, false);
     });
     $('select#top27').on('change', function(){
       var top27 = $('#top27').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/tt2b' + top27 + ".png",
+        url: 'images/tt2b' + top27 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 15, false);
     });
@@ -704,21 +705,21 @@
     $('select#pjfk1').on('change', function(){
       var pjfk1 = $('#pjfk1').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjxx' + pjfk1 + ".png",
+        url: 'images/pjxx' + pjfk1 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 16, false);
     });
     $('select#pjfk2').on('change', function(){
       var pjfk2 = $('#pjfk2').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjax' + pjfk2 + ".png",
+        url: 'images/pjax' + pjfk2 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 17, false);
     });
     $('select#pjfk3').on('change', function(){
       var pjfk3 = $('#pjfk3').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjth' + pjfk3 + ".png",
+        url: 'images/pjth' + pjfk3 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 18, false);
     });
@@ -726,14 +727,14 @@
     $('select#pjmp1').on('change', function(){
       var pjmp1 = $('#pjmp1').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp1' + pjmp1 + ".png",
+        url: 'images/pjmp1' + pjmp1 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 19, false);
     });
     $('select#pjmp2').on('change', function(){
       var pjmp2 = $('#pjmp2').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp2' + pjmp2 + ".png",
+        url: 'images/pjmp2' + pjmp2 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 20, false);
 
@@ -741,21 +742,21 @@
     $('select#pjmp31').on('change', function(){
       var pjmp31 = $('#pjmp31').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp31' + pjmp31 + ".png",
+        url: 'images/pjmp31' + pjmp31 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 21, false);
     });
     $('select#pjmp32').on('change', function(){
       var pjmp32 = $('#pjmp32').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp32' + pjmp32 + ".png",
+        url: 'images/pjmp32' + pjmp32 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 22, false);
     });
     $('select#pjmp33').on('change', function(){
       var pjmp33 = $('#pjmp33').val();
       editor.setImage({
-        url: 'http://six154u6i.hn-bkt.clouddn.com/pjmp33' + pjmp33 + ".png",
+        url: 'images/pjmp33' + pjmp33 + ".png",
         closeButtonRequire: false, clickToSelect: false,
       }, 23, false);
     });
@@ -772,39 +773,39 @@
         $('select#top12').formSelect();
         //设置图片
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt111.png',
+          url: 'images/tt111.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 7, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt121.png',
+          url: 'images/tt121.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 8, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 9, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 10, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 11, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 12, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 13, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 14, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 15, false);
       } else {
@@ -827,39 +828,39 @@
         $('select#top27').formSelect();
         //设置图片
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 7, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/empty.png',
+          url: 'images/empty.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 8, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt211.png',
+          url: 'images/tt211.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 9, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt221.png',
+          url: 'images/tt221.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 10, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt231.png',
+          url: 'images/tt231.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 11, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt241.png',
+          url: 'images/tt241.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 12, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt251.png',
+          url: 'images/tt251.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 13, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt261.png',
+          url: 'images/tt261.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 14, false);
         editor.setImage({
-          url: 'http://six154u6i.hn-bkt.clouddn.com/tt2b1.png',
+          url: 'images/tt2b1.png',
           closeButtonRequire: false, clickToSelect: false,
         }, 15, false);
       }
